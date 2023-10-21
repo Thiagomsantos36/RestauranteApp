@@ -8,10 +8,10 @@ const Stack = createStackNavigator(); // Cria uma instância do Stack Navigator
 
 export default function App() { // Função principal do aplicativo
   return (
-    <NavigationContainer> {/* Contêiner de navegação raiz */}
-      <Stack.Navigator initialRouteName="Login"> {/* Define um Stack Navigator com uma rota inicial chamada "Login" */}
-        <Stack.Screen name="Login" component={Login} /> {/* Define uma tela chamada "Login" que usa o componente Login */}
-        <Stack.Screen name="Vendas" component={Sales} /> {/* Define uma tela chamada "Vendas" que usa o componente Sales */}
+    <NavigationContainer> 
+      <Stack.Navigator initialRouteName="Login"> 
+        <Stack.Screen name="Login" component={Login} /> 
+        <Stack.Screen name="Vendas" component={Sales} />
       </Stack.Navigator>
     </NavigationContainer>
   );
